@@ -111,10 +111,7 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -177,16 +174,6 @@ sidebar:
   position: left
   #position: right
 
-  # Sidebar Display, available value (only for Muse | Mist):
-  #  - post    expand on posts automatically. Default.
-  #  - always  expand for all pages automatically
-  #  - hide    expand only when click on the sidebar toggle icon.
-  #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
-  #display: hide
-  #display: remove
-
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
 
@@ -195,9 +182,6 @@ sidebar:
 
   # Scroll percent label in b2t button.
   scrollpercent: false
-
-  # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
 
 
 # ---------------------------------------------------------------
@@ -234,18 +218,6 @@ post_wordcount:
   min2read: false
   totalcount: false
   separated_meta: true
-
-# Wechat Subscriber
-#wechat_subscriber:
-  #enabled: true
-  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
-  #description: ex. subscribe to my blog by scanning my public wechat account
-
-# Reward
-#reward_comment: Donate comment here
-#wechatpay: /images/wechatpay.jpg
-#alipay: /images/alipay.jpg
-#bitcoin: /images/bitcoin.png
 
 # Declare license on posts
 post_copyright:
@@ -349,53 +321,11 @@ mathjax:
 # Han Support docs: https://hanzi.pro/
 han: false
 
-# Swiftype Search API Key
-#swiftype_key:
-
-# Baidu Analytics ID
-#baidu_analytics:
-
-# Duoshuo ShortName
-#duoshuo_shortname:
-
 # Disqus
 disqus:
   enable: false
   shortname:
   count: true
-
-# Hypercomments
-#hypercomments_id:
-
-# changyan
-changyan:
-  enable: false
-  appid:
-  appkey:
-
-
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
-valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
-
-
-# Support for youyan comments system.
-# You can get your uid from http://www.uyan.cc
-#youyan_uid: your uid
-
-# Support for LiveRe comments system.
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -413,52 +343,6 @@ gitment:
   client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
-
-# Baidu Share
-# Available value:
-#    button | slide
-# Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
-
-# Share
-# This plugin is more useful in China, make sure you known how to use it.
-# And you can find the use guide at official webiste: http://www.jiathis.com/.
-# Warning: JiaThis does not support https.
-#jiathis:
-  ##uid: Get this uid from http://www.jiathis.com/
-#add_this_id:
-
-# Share
-#duoshuo_share: true
-
-# NeedMoreShare2
-# This plugin is a pure javascript sharing lib which is useful in China.
-# See: https://github.com/revir/need-more-share2
-# Also see: https://github.com/DzmVasileusky/needShareButton
-# iconStyle: default | box
-# boxForm: horizontal | vertical
-# position: top / middle / bottom + Left / Center / Right
-# networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Mailto,Reddit,
-#           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,
-#           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
-#           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
-needmoreshare2:
-  enable: false
-  postbottom:
-    enable: false
-    options:
-      iconStyle: box
-      boxForm: horizontal
-      position: bottomCenter
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
-  float:
-    enable: false
-    options:
-      iconStyle: box
-      boxForm: horizontal
-      position: middleRight
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -482,15 +366,6 @@ needmoreshare2:
 # See https://azure.microsoft.com/en-us/services/application-insights/
 # application_insights:
 
-# Make duoshuo show UA
-# user_id must NOT be null when admin_enable is true!
-# you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
-
 # Post widgets & FB/VK comments settings.
 # ---------------------------------------------------------------
 # Facebook SDK Support.
@@ -510,15 +385,6 @@ facebook_comments_plugin:
   num_of_posts: 10    # min posts num is 1
   width:        100%  # default width is 550px
   scheme:       light # default scheme is light (light or dark)
-
-# VKontakte API Support.
-# To get your AppID visit https://vk.com/editapp?act=create
-vkontakte_api:
-  enable:       false
-  app_id:       #<app_id>
-  like:         true
-  comments:     true
-  num_of_posts: 10
 
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
@@ -545,35 +411,6 @@ firestore:
   projectId: #required
   bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 
-# Show PV/UV of the website/page with busuanzi.
-# Get more information on http://ibruce.info/2015/04/04/busuanzi/
-busuanzi_count:
-  # count values only if the other configs are false
-  enable: false
-  # custom uv span for the whole site
-  site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
-  # custom pv span for the whole site
-  site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
-  # custom pv span for one page only
-  page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
-
-
-# Tencent analytics ID
-# tencent_analytics:
-
-# Tencent MTA ID
-# tencent_mta:
-
-
-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
-
 # Google Calendar
 # Share your recent schedule to others via calendar page
 #
@@ -590,27 +427,6 @@ calendar:
   showDeleted: false
   singleEvents: true
   maxResults: 250
-
-# Algolia Search
-algolia_search:
-  enable: false
-  hits:
-    per_page: 10
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
-
-# Local search
-# Dependencies: https://github.com/flashlab/hexo-generator-search
-local_search:
-  enable: false
-  # if auto, trigger search by changing input
-  # if manual, trigger search by pressing enter key or search button
-  trigger: auto
-  # show top n results per article, show all results by setting to -1
-  top_n_per_article: 1
-
 
 # ---------------------------------------------------------------
 # Tags Settings

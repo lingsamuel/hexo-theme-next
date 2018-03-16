@@ -1,3 +1,11 @@
+# Caution
+
+This is a MINIMAL version modified by [ME](https://github.com/lingsamuel), remove everything I don't need.
+
+Please do NOT use it if you want a fully-functional `NexT` theme.
+
+---
+
 <p align="right"><a title="New «NexT» 6.0.0 version [Reloaded]" href="https://github.com/theme-next/hexo-theme-next">NexT v6.0.0 here :triangular_flag_on_post:</a></p>
 
 <h1 align="center">NexT</h1>
