@@ -32,7 +32,6 @@
           <div id="content" class="content">
             {% block content %}{% endblock %}
           </div>
-          {% include '_third-party/duoshuo-hot-articles.swig' %}
           {% include '_partials/comments.swig' %}
         </div>
         {% if theme.sidebar.display !== 'remove' %}
@@ -79,10 +78,8 @@
   {% include '_scripts/boostrap.swig' %}
 
   {% include '_third-party/comments/index.swig' %}
-  {% include '_third-party/search/index.swig' %}
   {% include '_third-party/analytics/lean-analytics.swig' %}
   {% include '_third-party/analytics/firestore.swig' %}
-  {% include '_third-party/seo/baidu-push.swig' %}
   {% include '_third-party/needsharebutton.swig' %}
   {% include '_third-party/rating.swig' %}
   {% include '_third-party/mathjax.swig' %}

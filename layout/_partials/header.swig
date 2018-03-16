@@ -66,11 +66,6 @@
     </ul>
   {% endif %}
 
-  {% if hasSearch %}
-    <div class="site-search">
-      {% include 'search.swig' %}
-    </div>
-  {% endif %}
 </nav>
 
 {% include '../_custom/header.swig' %}
